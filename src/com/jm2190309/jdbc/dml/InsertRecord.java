@@ -14,7 +14,7 @@ public class InsertRecord {
 			// 2. Create command/statement
 			Statement stmt = con.createStatement();
 			// 3. Execute the command
-			int i = stmt.executeUpdate("INSERT INTO JM2190309_USER VALUES('Rohit', 25)");
+			int i = stmt.executeUpdate("INSERT INTO JM2190309_USER VALUES('Sachin', 10)");
 			// 4. Process the result
 			if (i > 0) {
 				System.out.println("Record has been inserted successfully.");
