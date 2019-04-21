@@ -1,11 +1,11 @@
-package com.jm2190309.jdbc.dml;
+package com.jm2190309.jdbc.dml.stmt.one;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class InsertRecord {
+public class DeleteRecord {
 
 	public static void main(String[] args) {
 		try {
@@ -14,10 +14,10 @@ public class InsertRecord {
 			// 2. Create command/statement
 			Statement stmt = con.createStatement();
 			// 3. Execute the command
-			int i = stmt.executeUpdate("INSERT INTO JM2190309_USER VALUES('Sachin', 10)");
+			int i = stmt.executeUpdate("DELETE FROM JM2190309_USER WHERE NAME = 'Rohit'");
 			// 4. Process the result
 			if (i > 0) {
-				System.out.println("Record has been inserted successfully.");
+				System.out.println("Record has been deleted successfully.");
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();

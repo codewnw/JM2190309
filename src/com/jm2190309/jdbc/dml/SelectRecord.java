@@ -19,7 +19,6 @@ public class SelectRecord {
 			ResultSet rs = stmt.executeQuery("SELECT * FROM JM2190309_USER");
 //			4. Processing the result
 			while (rs.next()) {
-				System.out.println("Data is there");
 				String name = rs.getString(1);
 				int age = rs.getInt(2);
 				System.out.println(name + " " + age);
