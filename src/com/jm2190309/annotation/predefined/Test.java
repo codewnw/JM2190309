@@ -1,6 +1,12 @@
 package com.jm2190309.annotation.predefined;
 
+import com.jm2190309.annotation.custom.Calculator;
+import com.jm2190309.annotation.custom.Description;
+
 public class Test {
+	
+	@Description(value = "At variable")
+	String str = "Test";
 
 	@SuppressWarnings("deprecation")
 	public static void main(String[] args) {
@@ -22,6 +28,12 @@ public class Test {
 		vehicle.kickStart();
 		vehicle.move();
 		vehicle.stop();
+		
+		System.out.println("----");
+		
+		Calculator calculator = new Calculator();
+		int addition = calculator.add(10, 20);
+		System.out.println(addition);
 
 	}
 
