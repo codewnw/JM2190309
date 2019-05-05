@@ -1,6 +1,5 @@
 package com.jm2190309.jdbc.image;
 
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.sql.Blob;
