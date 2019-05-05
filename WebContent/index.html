@@ -1,6 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="resources//css//my.css">
+<style type="text/css">
+h3 {
+	color: red;
+	font-style: italic;
+}
+
+a {
+	text-decoration: none;
+}
+
+.abc {
+	color: green;
+}
+
+#xyz {
+	text-decoration: underline;
+}
+</style>
+
 <meta charset="ISO-8859-1">
 <title>Welcome to JM2190309</title>
 </head>
@@ -12,8 +32,7 @@
 		YouTube</a> |
 	<a href="https://www.w3schools.com/html/" target="_blank">Learn
 		from Web</a> |
-		<a href="devision.html" target="_blank">Learn
-		Devision</a>
+	<a href="devision.html" target="_blank">Learn Devision</a>
 
 	<br>
 	<br>
@@ -21,8 +40,9 @@
 	<!-- This is HTML Comment -->
 	<label>HTML Heading</label>
 	<hr>
-	<h1>This is heading one.</h1>
-	<h2>This is heading two.</h2>
+	<h1 style="color: green; font-family: sans-serif;" align="center">This
+		is heading one.</h1>
+	<h2 class="abc">This is heading two.</h2>
 	<h3>This is heading three.</h3>
 	<h4>This is heading four.</h4>
 	<h5>This is heading five.</h5>
@@ -34,20 +54,19 @@
 
 	<label>HTML Paragraph</label>
 	<hr>
-	<p>This is a &nbsp;&nbsp;&nbsp;&nbsp; paragraph and it is amazing.</p>
+	<p id="xyz">This is a &nbsp;&nbsp;&nbsp;&nbsp; paragraph and it is amazing.</p>
 	<br>
 	<br />
 	<br>
 
-	<label>HTML Image</label>
+	<label class="abc">HTML Image</label>
 	<hr>
-	<img
-		src="resources//images//tech-word-cloud.jpg"
-		width="300px" height="300px" />
+	<img src="resources//images//tech-word-cloud.jpg" width="300px"
+		height="300px" />
 	<br>
 	<br />
 	<br>
-
+	<h3>One more H3</h3>
 	<label>HTML Image</label>
 	<hr>
 	<table border="1px">
@@ -56,12 +75,13 @@
 			<td>Age</td>
 		</tr>
 		<tr>
-			<td>Atul</td>
+			<td class="abc">Atul</td>
 			<td>20</td>
 		</tr>
 	</table>
 
-<hr>
-&copy; 2019, All rights reserved.
+	<hr>
+	&copy; 2019,
+	<h3>All rights reserved.</h3>
 </body>
 </html>
