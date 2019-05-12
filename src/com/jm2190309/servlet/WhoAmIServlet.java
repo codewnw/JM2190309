@@ -27,8 +27,12 @@ public class WhoAmIServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		if (age < 6) {
 			out.print("You are child.");
-		} else if (age >= 6 && age < 12) {
+		} else if (age >= 6 && age < 18) {
 			out.print("You are teen.");
+		} else if (age >= 18 && age < 60) {
+			out.print("You are Adult.");
+		} else if (age >= 60 && age <= 100) {
+			out.print("You are Cenior Citizen.");
 		} else {
 			out.print("I don't know");
 		}
