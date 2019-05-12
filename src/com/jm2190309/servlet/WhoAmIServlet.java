@@ -11,14 +11,11 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet({ "/WhoAmIServlet", "/whoAmI" })
 public class WhoAmIServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-
-	public WhoAmIServlet() {
-		super();
-	}
-
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		PrintWriter out = response.getWriter();
+		out.print("I am from doGet");
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -32,10 +29,16 @@ public class WhoAmIServlet extends HttpServlet {
 		} else if (age >= 18 && age < 60) {
 			out.print("You are Adult.");
 		} else if (age >= 60 && age <= 100) {
-			out.print("You are Cenior Citizen.");
+			out.print("You are Senior Citizen.");
 		} else {
 			out.print("I don't know");
 		}
+	}
+
+	private static final long serialVersionUID = 1L;
+
+	public WhoAmIServlet() {
+		super();
 	}
 
 }

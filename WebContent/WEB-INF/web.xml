@@ -9,12 +9,12 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-	<servlet>
-		<servlet-name>greet</servlet-name>
-		<servlet-class>com.jm2190309.servlet.GreetServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>greet</servlet-name>
-		<url-pattern>/greatMe</url-pattern>
-	</servlet-mapping>
+  <servlet>
+    <servlet-name>greet</servlet-name>
+    <servlet-class>com.jm2190309.servlet.GreetServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>greet</servlet-name>
+    <url-pattern>/greatMe</url-pattern>
+  </servlet-mapping>
 </web-app>
