@@ -50,6 +50,7 @@ public class RegistrationServlet extends HttpServlet {
 		response.setContentType("text/HTML");
 		PrintWriter out = response.getWriter();
 		out.println("<h1>Registration Successfull!!!</h1>");
+		out.println(name);
 	}
 
 }
