@@ -24,8 +24,9 @@ public class ProfileServlet extends HttpServlet {
 			throws ServletException, IOException {
 		System.out.println("I'm in doPost of ProfileServlet");
 		String un = request.getParameter("un");
+		String message = (String)request.getAttribute("msg");
 		PrintWriter out = response.getWriter();
-		out.println(un + " you are logged in successfuly");
+		out.println(un + message);
 
 	}
 

@@ -39,8 +39,10 @@ public class RegistrationServlet extends HttpServlet {
 		System.out.println("Email: " + email);
 		System.out.println("Age: " + age);
 		System.out.print("Courses: ");
+		String allCourses = "";
 		for (int i = 0; i < courses.length; i++) {
 			System.out.print(courses[i] + " ");
+			allCourses = allCourses + courses[i] + " ";
 		}
 		System.out.println("");
 		System.out.println("Country: " + country);
@@ -50,7 +52,32 @@ public class RegistrationServlet extends HttpServlet {
 		response.setContentType("text/HTML");
 		PrintWriter out = response.getWriter();
 		out.println("<h1>Registration Successfull!!!</h1>");
-		out.println(name);
+		out.print("<table border=\"1px\">\r\n" + 
+				"		<tr>\r\n" + 
+				"			<td><b>Name</b></td>\r\n" + 
+				"			<td>"+name+"</td>\r\n" + 
+				"		</tr>\r\n" + 
+				"		<tr>\r\n" + 
+				"			<td>Eamil</td>\r\n" + 
+				"			<td><i>"+email+"</i></td>\r\n" + 
+				"		</tr>\r\n" + 
+				"		<tr>\r\n" + 
+				"			<td>Age</td>\r\n" + 
+				"			<td>"+age+"</td>\r\n" + 
+				"		</tr>\r\n" + 
+				"		<tr>\r\n" + 
+				"			<td>Country</td>\r\n" + 
+				"			<td>"+country+"</td>\r\n" + 
+				"		</tr>\r\n" + 
+				"		<tr>\r\n" + 
+				"			<td>Comment</td>\r\n" + 
+				"			<td>"+comment+"</td>\r\n" + 
+				"		</tr>\r\n" + 
+				"		<tr>\r\n" + 
+				"			<td>Courses</td>\r\n" + 
+				"			<td>"+allCourses+"</td>\r\n" + 
+				"		</tr>\r\n" + 
+				"</table>");
 	}
 
 }

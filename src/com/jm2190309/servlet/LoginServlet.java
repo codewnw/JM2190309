@@ -25,7 +25,9 @@ public class LoginServlet extends HttpServlet {
 
 		PrintWriter out = response.getWriter();
 		if (userName.equals(password)) {
-			System.out.println("Login Successful!!!");
+			String message = "Login Successful!!!";
+			System.out.println(message);
+			request.setAttribute("msg", message);
 			RequestDispatcher rd = request.getRequestDispatcher("profile");
 			rd.forward(request, response);
 		} else {
