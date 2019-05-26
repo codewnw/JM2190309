@@ -21,7 +21,7 @@ public class LoginServlet extends HttpServlet {
 			throws ServletException, IOException {
 
 		String userName = request.getParameter("un");
-		String password = request.getParameter("pass");
+		String password = request.getParameter("password");
 
 		PrintWriter out = response.getWriter();
 		if (userName.equals(password)) {
