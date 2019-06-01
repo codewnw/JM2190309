@@ -29,16 +29,18 @@ public class JavaServlet extends HttpServlet {
 			throws ServletException, IOException {
 		PrintWriter out = response.getWriter();
 		out.println("Hi, " + request.getParameter("name"));
-		
+
 		ServletConfig config = getServletConfig();
 		String trnName = config.getInitParameter("trainerName");
 		String trnMobile = config.getInitParameter("trainerMobile");
-		
-		out.println("Your trainer is "+trnName+", Mobile: "+trnMobile);
-		
+
+		out.println("Your trainer is " + trnName + ", Mobile: " + trnMobile);
+
 		ServletContext context = config.getServletContext();
 		String instituteName = context.getInitParameter("institute");
-		out.println("In institute: "+instituteName);
+		out.println("In institute: " + instituteName);
+		context.setAttribute("javaTemp", "Java Temp");
+		context.removeAttribute("javaTemp");
 	}
 
 }

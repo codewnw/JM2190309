@@ -41,6 +41,7 @@ public class PhpServlet extends HttpServlet {
 		ServletContext context = config.getServletContext();
 		String instituteName = context.getInitParameter("institute");
 		out.println("In institute: "+instituteName);
+		context.setAttribute("phpTemp", "PHP Temp");
 	}
 
 }
