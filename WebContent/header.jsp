@@ -1,4 +1,5 @@
 <%@ page import="java.util.*"%>
+<%@ page isThreadSafe="false" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,5 +20,6 @@
 		//int i = 10/0;
 	%>
 	<hr>
+	<%= request.getParameter("un") %>
 </body>
 </html>
