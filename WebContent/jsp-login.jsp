@@ -6,7 +6,8 @@
 <title>Login</title>
 </head>
 <body>
-<%@ include file="header.jsp" %>
+<%-- <%@ include file="header.jsp" %> --%>
+<jsp:include page="header.jsp" />
 	<h1>Please login...</h1>
 	<%
 	String message = request.getParameter("message");
@@ -17,6 +18,7 @@
 		<input type="password" name="password" placeholder="Enter password" /><br /> 
 		<input type="submit" value="Login">
 	</form>
-<%@ include file="footer.jsp" %>
+<%-- <%@ include file="footer.jsp" %> --%>
+<jsp:include page="footer.jsp" />
 </body>
 </html>

@@ -20,6 +20,8 @@
 		//int i = 10/0;
 	%>
 	<hr>
-	<%= request.getParameter("un") %>
+	<%= request.getParameter("un") %> <br />
+	<%= request.getParameter("msg") %>
+	
 </body>
 </html>
