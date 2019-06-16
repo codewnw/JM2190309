@@ -4,6 +4,7 @@
 	String p = request.getParameter("password");
 
 	if (un.equals(p)) {
+		request.setAttribute("something", "I don't know");
 %>
 <jsp:forward page="header.jsp">
 	<jsp:param value="Success" name="msg" />

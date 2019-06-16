@@ -1,5 +1,5 @@
 <%@ page import="java.util.*"%>
-<%@ page isThreadSafe="false" %>
+<%@ page isThreadSafe="false"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,13 +15,19 @@
 		menu.add("About Us");
 
 		for (String item : menu) {
-			%><a href="index.html"><%			out.print(item+" ");%></a><%
+	%><a href="index.html">
+		<%
+			out.print(item + " ");
+		%>
+	</a>
+	<%
 		}
 		//int i = 10/0;
 	%>
 	<hr>
-	<%= request.getParameter("un") %> <br />
-	<%= request.getParameter("msg") %>
-	
+	${param.un}
+	<br /> ${param.msg}
+	<br /> ${requestScope.something}
+
 </body>
 </html>

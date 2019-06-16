@@ -23,6 +23,9 @@ public class JavaServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		ServletConfig config = getServletConfig();
+		config.getServletContext().setAttribute("msg", "Password is hidden");
+		request.getRequestDispatcher("java-enrollment.jsp").forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)

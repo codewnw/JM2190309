@@ -12,6 +12,15 @@
 			type="submit" value="Enroll">
 
 	</form>
+${applicationScope.msg}
+<br />
+${header.host}<br />
+${header.referer}<br />
+${headrValues.accept-language[0]}<br />
+${headrValues.accept-language[1]}<br />
 
+
+<br />
+${pageContext.request.contextPath}
 </body>
 </html>
